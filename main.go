@@ -2,7 +2,6 @@ package main
 
 import (
 	"log"
-	"os"
 	"net/http"
 	"time"
 
@@ -20,8 +19,19 @@ func main() {
 	}
 	router.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusOK)
-		hostname, _ := os.Hostname()
-		str := "You've hit " + hostname + "\n"
+		str := `
+         ,_---~~~~~----._         
+  _,,_,*^____      _____''*g*\"*, 
+ / __/ /'     ^.  /      \ ^@q   f 
+[  @f | @))    |  | @))   l  0 _/  
+ \/   \~____ / __ \_____/    \   
+  |           _l__l_           I   
+  }          [______]           I  
+  ]            | | |            |  
+  ]             ~ ~             |  
+  |                            |   
+   |                           |   
+`
 		w.Write([]byte(str))
 	})
 
