@@ -1,5 +1,3 @@
-module github.com/arthurcgc/dummy_server
+module github.com/arthurcgc/gopher
 
-go 1.13
-
-require github.com/gorilla/mux v1.7.3
+go 1.16

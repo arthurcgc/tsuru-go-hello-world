@@ -1,0 +1,5 @@
+healthcheck:
+  path: /
+  scheme: http
+  method: GET
+  status: 200
