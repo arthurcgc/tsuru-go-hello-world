@@ -3,3 +3,5 @@ healthcheck:
   scheme: http
   method: GET
   status: 200
+  interval_seconds: 3
+  timeout_seconds: 2
